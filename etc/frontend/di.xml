@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * O2TI PagBank Discount in Instalmment.
+ *
+ * Copyright © 2024 O2TI. All rights reserved.
+ *
+ * @author    Bruno Elisei <brunoelisei@o2ti.com>
+ * @license   See LICENSE for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="PagBank\PaymentMagento\Model\Api\ConsultPSInstallments">
+        <plugin name="pagbank_discount_in_installment_plugin" type="O2TI\PagBankDiscountInInstallment\Plugin\PagBank\Model\Api\ConsultPSInstallmentsPlugin" />
+    </type>
+</config>

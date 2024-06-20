@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * O2TI PagBank Discount in Instalmment.
+ *
+ * Copyright © 2024 O2TI. All rights reserved.
+ *
+ * @author    Bruno Elisei <brunoelisei@o2ti.com>
+ * @license   See LICENSE for license details.
+ */
+-->
+<include xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_include.xsd">
+    <group id="discount" translate="label comment" type="text" sortOrder="300" showInDefault="1" showInWebsite="0" showInStore="0">
+        <label>Discount in Installment</label>
+        <field id="first_installment_discount" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>First Installment Discount (%)</label>
+            <validate>validate-number validate-zero-or-greater</validate>
+            <config_path>payment/pagbank_paymentmagento/first_installment_discount</config_path>
+        </field>
+    </group>
+</include>
