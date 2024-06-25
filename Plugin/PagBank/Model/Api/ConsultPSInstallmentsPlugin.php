@@ -80,7 +80,7 @@ class ConsultPSInstallmentsPlugin
                 $installments[0]['amount']['has_discount'] = true;
                 $installments[0]['amount']['discount_percent'] = $discountPercentage;
 
-                $installments[0]['amount']['fees']['buyer']['interest']['total'] = ($originalInstallmentValue - $discountedInstallmentValue) * -1;
+                $installments[0]['amount']['fees']['buyer']['interest']['total'] = ($originalInstallmentValue - $discountedInstallmentValue) * - 1;
             }
         }
         
